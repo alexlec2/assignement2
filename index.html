@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Titre</title>
+    <link rel="stylesheet" href="/css/style.css" media="screen" charset="utf-8">
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<div class="grid justify-items-center gap-8 text-center m-5">
+    <div class="text-center text-slate-50 ">
+        <h1 id="hello" class="text-4xl p-4 rounded-t-lg bg-slate-900 ">Welcome to my website !</h1>
+        <p class="p-4 rounded-b-lg bg-slate-800 ">This website allows you to take a classic desk of 52 cards randomly shuffled and draw card one by one.</p>
+    </div>
+    <div class="flex justify-center gap-4">
+        <input id="shuffleCards" type="button" onclick="deskCard('shuffle')" value="Shuffle" class="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+        <input id="drawCards" type="button" onclick="deskCard('draw')" value="Draw" class="flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+    </div>
+    <div>
+        <img id="cardIMG" src="" alt="">
+    </div>
+    <div id="divRemainingCards" class="hidden">
+        <p id="remainingCards" class="mt-4 p-4 rounded-lg bg-slate-700 text-slate-50"></p>
+    </div>
+    <div class="mt-4 p-4 rounded-lg bg-slate-600 text-slate-50 flex justify-center items-center gap-4">
+        <div>
+            <p>Coded with</p>
+        </div>
+        <div>
+            <a href="https://tailwindcss.com/docs/background-color" target="_blank">
+                <img src="/img/logoTailwindv2.svg" alt="Tailwind Logo" class="h-6">
+            </a>
+        </div>
+        <div>
+            <p>  and  </p>
+        </div>
+        <div>
+            <a href="https://www.deckofcardsapi.com" target="_blank">
+                <img src="/img/logoAPI.png" alt="Deck of cards API Logo" class="h-10">
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
