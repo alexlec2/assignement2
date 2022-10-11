@@ -25,12 +25,6 @@ async function deskCard(type){
     console.log(json2);
     count -= 1;
 
-
-    if (count === 52){
-
-    }
-
-
     if(count === 0){
         count = 52;
     }
